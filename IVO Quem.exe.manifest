@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="IVO Quem.exe" version="1.0.0.4" publicKeyToken="3528ee1a553b07d2" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="user.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="IVO Quem" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="IVO Quem.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.ADODB.dll" size="102400">
+      <assemblyIdentity name="Interop.ADODB" version="2.8.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>D+GFJCaUjgApPRcBCEPrF3yS4EU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IVO Quem.exe" size="29696">
+      <assemblyIdentity name="IVO Quem" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Pm9Q4YS76/KvVeEoQ0KCl68XkJQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="JavaCup.ico" size="22206">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>24Py0x00nz9EV5GVbeH/vNtq86Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="user.ico" size="9158">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>E5Ho526a5UlmZofzCWy2SeCItyo=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=IVO\Pedro" issuerKeyHash="33c5b74d067ec0fbec14018c17543589c5f11bce" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>FAn6bs5lOwPMcgxCqYi250b1Yrw=</DigestValue></Reference></SignedInfo><SignatureValue>HbKqcgl3dLmhk/EKnm9pkW6supu2lCnu1HMzMumDPYk4Nd4Jv4xX6WQ9QVnq7NQvgb9hGxAJgG7gZ8TkfPGoICa3QB5PP+nTlSmLyyeNl+SPhXBhb2q8sW68AA7z1Gq79WubiRcR6jgwEfXqV5S3TZCD0IhNkPh7pIq+7m3LzUU=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>2xoSAExaKDmA1a5jcdNzLHof13xuRUj0+6cgS4IYQ2b2WjfTiMDARX7zRW5cGbsCqHG11PA+oFUT0rHZh6yjr2Z9Zb6IDvZTYSJe7mBDSnpsRpLw2xhN8s6AjhKxVmqbHGjEIOZvXeKBHmGnVE2LVyOLzADSEzOp7LYsahxAbFc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="bc62f546e7b688a9420c72cc033b65ce6efa0914" Description="" Url=""><as:assemblyIdentity name="IVO Quem.exe" version="1.0.0.4" publicKeyToken="3528ee1a553b07d2" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=IVO\Pedro</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>LODTPG2K5NJ0N7MvUV5gAQcv+/g=</DigestValue></Reference></SignedInfo><SignatureValue>CO7/1qkpvSsiYxVd/6bqy35Thr036LTm/LV0xPSX3H/2KIjHC3bK9lLVTnulsTUZ6VdqpX7228W2rsOOic85wA8UY6iZQvfScktoKmlNvPkiLvjnYyHCyc3wPLxtkHRQ1uafnE55PCDK3IU4Lzzm72kq8oCb4TfS6rud+8ACDoY=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>2xoSAExaKDmA1a5jcdNzLHof13xuRUj0+6cgS4IYQ2b2WjfTiMDARX7zRW5cGbsCqHG11PA+oFUT0rHZh6yjr2Z9Zb6IDvZTYSJe7mBDSnpsRpLw2xhN8s6AjhKxVmqbHGjEIOZvXeKBHmGnVE2LVyOLzADSEzOp7LYsahxAbFc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBtTCCASKgAwIBAgIQKCq2ZLkW1bBFBiF3E7Ps/DAJBgUrDgMCHQUAMB0xGzAZBgNVBAMeEgBJAFYATwBcAFAAZQBkAHIAbzAeFw0wOTAzMDIxNzAzMDJaFw0xMDAzMDIyMzAzMDJaMB0xGzAZBgNVBAMeEgBJAFYATwBcAFAAZQBkAHIAbzCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA2xoSAExaKDmA1a5jcdNzLHof13xuRUj0+6cgS4IYQ2b2WjfTiMDARX7zRW5cGbsCqHG11PA+oFUT0rHZh6yjr2Z9Zb6IDvZTYSJe7mBDSnpsRpLw2xhN8s6AjhKxVmqbHGjEIOZvXeKBHmGnVE2LVyOLzADSEzOp7LYsahxAbFcCAwEAATAJBgUrDgMCHQUAA4GBAMolBAGSqqyNIHgzG5199lxdMpxv6IQ16ZdysItrEAiQdD0ZCghdVYtQPVB/c0zY+64wFWOKJbZgHzQ0kxYDq0YiQyf4v8X2xAzesohBnpka0q/C1NnS3HUwLC/GcWshejQqWXZ5pox+bSIuPDhij6aV5H6Og/v/7iPfZLCNI4na</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
